@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gradient-to-r from-[#1d2123] to-[#1d2123]
+}
+
+.router-link-active, .router-link-exact-active > span {
+    @apply text-yellow-600 font-bold
+}
