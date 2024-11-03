@@ -18,7 +18,7 @@
                 <div class="flex justify-between items-center gap-1">
                     <UInput type="email" size="xl" variant="outline" class="w-full" color="yellow"
                         placeholder="Enter your email" />
-                    <UButton class="bg-yellow-600 hover:bg-yellow-700" size="xl" label="Subscribe" />
+                    <UButton color="yellow" size="xl" label="Subscribe" />
                 </div>
             </div>
         </div>

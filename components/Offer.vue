@@ -15,7 +15,7 @@
                         veniam
                         illo sapiente iure mollitia facere quisquam magni esse placeat veritatis quaerat.</p>
                 </div>
-                <UButton label="Get More" size="xl" class="justify-center bg-yellow-600 hover:bg-yellow-700"
+                <UButton label="Get More" size="xl" class="justify-center" color="yellow"
                     trailing-icon="solar:alt-arrow-right-broken" />
             </div>
             <div class="lg:w-1/2 bg-cover overflow-hidden relative w-full h-96 rounded-3xl shadow-2xl ">

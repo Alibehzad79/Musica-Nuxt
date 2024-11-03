@@ -23,8 +23,8 @@ const goSearch = async () => {
             <UButton icon="solar:hamburger-menu-broken" @click="openMenu = true" size="xl" color="white" variant="solid"
                 class="lg:hidden" />
             <USlideover v-model="openMenu" class="lg:hidden">
-                <UCard class="flex flex-col flex-1 bg-[#1a1e1f]"
-                    :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-[#1a1e1f]' }">
+                <UCard class="flex flex-col flex-1"
+                    :ui="{ body: { base: 'flex-1' }, ring: '', divide: 'divide-y divide-none', background: 'bg-[#1a1e1f]' }">
                     <template #header>
                         <UButton color="red" variant="ghost" size="sm" icon="i-heroicons-x-mark-20-solid"
                             class="flex lg:hidden absolute end-5 top-5 z-10" square padded @click="openMenu = false" />
