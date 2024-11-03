@@ -10,11 +10,11 @@ const goSearch = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="sticky top-0 w-full z-50 bg-cover backdrop-blur-md p-2 lg:p-5 rounded-b-3xl">
         <div class="flex items-center gap-10 justify-between">
             <Icon name="solar:music-notes-bold-duotone" size="50" class="text-white" />
             <UInput placeholder="Search" v-model="searchValue" icon="solar:magnifer-outline"
-                class="w-full text-white hidden lg:flex" size="xl" variant="none"
+                class="w-full text-white hidden lg:flex bg-gray-700 rounded-3xl" size="xl" variant="none"
                 v-on:keyup.enter="goSearch">
                 <template #trailing v-if="searchValue">
                     <UKbd value="Enter" />
@@ -30,7 +30,7 @@ const goSearch = async () => {
                             class="flex lg:hidden absolute end-5 top-5 z-10" square padded @click="openMenu = false" />
                     </template>
                     <UInput placeholder="Search" v-model="searchValue" icon="solar:magnifer-outline"
-                        class="w-full text-white mb-5" size="xl" variant="none"
+                        class="w-full text-white mb-5 bg-gray-700 rounded-3xl" size="xl" variant="none"
                         v-on:keyup.enter="goSearch">
                         <template #trailing v-if="searchValue">
                             <UKbd value="Enter" />

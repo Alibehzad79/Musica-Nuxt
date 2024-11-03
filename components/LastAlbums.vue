@@ -29,7 +29,7 @@ const albums = [
                 v-for="album in albums">
                 <img :src="album.image" alt="image" draggable="false"
                     class="w-full h-[18rem] lg:h-[25rem] rounded-3xl hover:scale-110 transition-all delay-50">
-                <div class="flex flex-col gap-2 ms-5 pb-2 lg:pb-5 absolute bottom-0 backdrop-blur-sm w-full">
+                <div class="flex flex-col gap-2 ps-5 pb-2 lg:pb-5 absolute bottom-0 backdrop-blur-sm w-full">
                     <NuxtLink :to="'/albums/' + album.title" class="text-white font-bold text-2xl line-clamp-1">{{
                         album.title }}
                     </NuxtLink>

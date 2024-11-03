@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <div class="mt-5 mx-5">
+    <div class="mt-5">
         <Header />
-        <div class="col flex lg:gap-28 mt-10">
+        <div class="col flex lg:gap-28 mt-10 p-5">
             <div>
                 <MySidebar />
             </div>
@@ -13,6 +13,7 @@
                 <slot />
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 

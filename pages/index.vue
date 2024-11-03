@@ -19,6 +19,8 @@ useSeoMeta({
             <NewReleases />
             <LastAlbums />
             <Populars />
+            <Offer />
+            <Subscribe />
         </div>
     </div>
 </template>
