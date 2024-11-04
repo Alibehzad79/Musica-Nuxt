@@ -45,7 +45,7 @@ const items = [
             <span class="text-2xl text-white font-bold">Populars</span>
             <div>
                 <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-1/1 md:basis-1/3 lg:basis-1/6 mx-2', default: {prevButton: {class: 'bg-yellow-500 hover:bg-yellow-500'}, nextButton: {class: 'bg-yellow-500 hover:bg-yellow-500'}},  }" arrows>
-                    <AlbumCard :title="item.title" :creator="item.creator" :image="item.image" />
+                    <MusicCard :title="item.title" :creator="item.creator" :image="item.image" />
                 </UCarousel>
             </div>
         </div>

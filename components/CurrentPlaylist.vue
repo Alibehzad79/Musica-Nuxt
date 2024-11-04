@@ -19,7 +19,14 @@
                         facere. Deserunt explicabo, autem illo illum asperiores vitae odio non corporis nemo nihil? Quas
                         exercitationem quia dicta reprehenderit ea labore quibusdam dolor</p>
                 </div>
-                <div class="flex items-center gap-1">
+                <div class="flex items-center gap-4">
+                    <UAvatarGroup size="sm" :max="5">
+                        <UAvatar src="https://avatars.githubusercontent.com/u/739984?v=4" alt="benjamincanac" />
+                        <UAvatar src="https://avatars.githubusercontent.com/u/904724?v=4" alt="Atinux" />
+                        <UAvatar src="https://avatars.githubusercontent.com/u/7547335?v=4" alt="smarroufin" />
+                        <UAvatar src="https://avatars.githubusercontent.com/u/7547355?v=4" alt="Ali" />
+                        <UAvatar src="https://avatars.githubusercontent.com/u/7547365?v=4" alt="Tural" />
+                    </UAvatarGroup>
                     <Icon name="solar:heart-bold" size="20" class="text-yellow-500" />
                     <span class="text-yellow-500">33k Like</span>
                 </div>
