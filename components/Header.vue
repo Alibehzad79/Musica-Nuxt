@@ -3,6 +3,11 @@
 const searchValue = ref()
 const openMenu = ref(false)
 
+const getLogOut = async()=> {
+    openMenu.value = false
+    await navigateTo('/')
+}
+
 const goSearch = async () => {
     await navigateTo('/albums')
 }
@@ -57,7 +62,7 @@ const goSearch = async () => {
                                     class="text-white hover:text-yellow-600" />
                                 <span class="text-white">Account</span>
                             </NuxtLink>
-                            <NuxtLink @click="null" class="cursor-pointer flex items-center gap-5">
+                            <NuxtLink @click="getLogOut" class="cursor-pointer flex items-center gap-5">
                                 <Icon name="solar:login-3-bold-duotone" size="30" class="text-red-500" />
                                 <span class="text-red-500">Logout</span>
                             </NuxtLink>

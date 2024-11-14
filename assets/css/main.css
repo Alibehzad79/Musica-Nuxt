@@ -6,6 +6,37 @@ body {
     @apply bg-gradient-to-r from-[#1d2123] to-[#1d2123]
 }
 
-.router-link-active, .router-link-exact-active > span {
+.router-link-active, .router-link-exact-active>span {
     @apply text-yellow-600 font-bold
+}
+
+.album-head {
+    box-shadow: 0px 0px 50px 0px black;
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+    transition: all 0.2s;
+}
+
+.slide-left-enter-from {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.slide-left-leave-to {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.slide-right-enter-from {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.slide-right-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
 }

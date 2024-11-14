@@ -1,5 +1,7 @@
 <script setup>
-
+const getLogOut = async()=> {
+    await navigateTo('/')
+}
 </script>
 <template>
     <div class="fixed lg:left-5 hidden lg:flex">
@@ -33,7 +35,7 @@
                 </UTooltip>
                 <UTooltip text="Logout" :popper="{ placement: 'right', arrow: true }"
                     :ui="{ background: 'bg-[#1a1e1f]', color: 'text-white', ring: 'ring-gray-800' }">
-                    <NuxtLink @click="null" class="cursor-pointer">
+                    <NuxtLink @click="getLogOut" class="cursor-pointer">
                         <Icon name="solar:login-3-bold-duotone" size="30" class="text-white hover:text-red-500" />
                     </NuxtLink>
                 </UTooltip>

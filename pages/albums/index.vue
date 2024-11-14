@@ -52,7 +52,7 @@ const albums = [
     <div>
         <div class="mb-10">
             <strong class="text-3xl text-white font-bold">Albums</strong>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 mt-10 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 gap-10">
                 <AlbumCard v-for="album in albums" :key="album" :image="album.image" :title="album.title"
                     :creator="album.creator" :avatar="album.avatar" />
             </div>
