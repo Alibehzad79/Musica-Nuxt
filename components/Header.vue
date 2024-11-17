@@ -3,13 +3,15 @@
 const searchValue = ref()
 const openMenu = ref(false)
 
-const getLogOut = async()=> {
+const getLogOut = async () => {
     openMenu.value = false
     await navigateTo('/')
 }
 
 const goSearch = async () => {
-    await navigateTo('/albums')
+    if (searchValue.value !== undefind) {
+        await navigateTo('/search/' + searchValue.value)
+    }
 }
 
 </script>

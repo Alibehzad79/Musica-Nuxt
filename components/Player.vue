@@ -60,7 +60,7 @@ const time_convert = (num) => {
     <div class="rounded-3xl shadow-2xl">
         <div class="flex flex-col lg:flex-row justify-between p-5 gap-5 lg:gap-10 items-start rounded-3xl">
             <div class="flex items-center gap-5 w-1/2">
-                <img :src="image" :alt="title" :title="title" class="hidden lg:flex w-[5rem] h-[5rem] rounded-xl" />
+                <img :src="image" :alt="title" :title="title" class="hidden lg:flex w-[5rem] h-[5rem] rounded-xl" lazy="true" />
                 <div class="flex flex-col lg:gap-5 justify-between">
                     <strong class="text-white">{{ title }}</strong>
                     <span class="text-gray-400">{{ subtitle }}</span>

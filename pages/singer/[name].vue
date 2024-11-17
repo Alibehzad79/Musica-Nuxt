@@ -9,7 +9,7 @@ const route = useRoute()
         <div class="flex flex-col gap-10 mb-56">
             <div class="flex flex-col lg:flex-row gap-10 items-center p-5 justify-start">
                 <img src="https://pixlr.com/images/generator/text-to-image.webp" alt="image"
-                    class="w-full lg:h-[30rem] lg:w-[30rem] rounded-3xl">
+                    class="w-full lg:h-[30rem] lg:w-[30rem] rounded-3xl" lazy="true">
                 <div class="flex flex-col gap-5 justify-between lg:h-96">
                     <div class="flex flex-col gap-2">
                         <h1 class="text-white text-3xl">{{ route.params.name }}</h1>
